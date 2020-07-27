@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  background: skyblue;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper .numbers {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.wrapper .numbers .number {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #bceafd;
+  text-shadow: -3px 1px 5px #1b4e63, 0 -2px 1px #fff;
+}
+
+.wrapper .numbers .number[data-abbreviation]::before {
+  content: attr(data-abbreviation);
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  color: #bceafd;
+  text-shadow: -3px 1px 5px #1b4e63, 0 -2px 1px #fff;
+  display: block;
+  margin-bottom: 0;
+}

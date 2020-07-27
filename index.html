@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abacus</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+  <link rel="stylesheet" href="./styles/block.css">
+  <link rel="stylesheet" href="./styles/button.css">
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="numbers">
+      <div class="number" data-multiplier="1000000" data-abbreviation="UMI">0</div>
+      <div class="number">.</div>
+      <div class="number" data-multiplier="100000" data-abbreviation="CM">0</div>
+      <div class="number" data-multiplier="10000" data-abbreviation="DM">0</div>
+      <div class="number" data-multiplier="1000" data-abbreviation="UM">0</div>
+      <div class="number">.</div>
+      <div class="number" data-multiplier="100" data-abbreviation="C">0</div>
+      <div class="number" data-multiplier="10" data-abbreviation="D">0</div>
+      <div class="number" data-multiplier="1" data-abbreviation="U">0</div>
+    </div>
+  </div>
+
+  <template id="tower--template">
+    <div class="tower" data-counter data-multiplier>
+      <div class="operations">
+        <span class="btn operation subtract btn_3d">
+          <span><span>-</span></span>
+        </span>
+        <span class="btn operation add btn_3d">
+          <span><span>+</span></span>
+        </span>
+      </div>
+    </div>
+  </template>
+
+  <template id="block-wrapper--template">
+    <div class="block-wrapper animate__animated" data-counter data-value>
+      <div class="block">
+        <div class="face top" data-value></div>
+        <div class="face back" data-value></div>
+        <div class="face right" data-value></div>
+        <div class="face front" data-value></div>
+        <div class="face left" data-value></div>
+        <div class="face bottom" data-value></div>
+      </div>
+    </div>
+  </template>
+
+  <script src="./scripts/observable.js"></script>
+  <script src="./scripts/model.js"></script>
+  <script src="./scripts/view.js"></script>
+  <script src="./scripts/controller.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

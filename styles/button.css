@@ -1,0 +1,107 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  :root {
+    --block-size: 30px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* :root {
+    --block-size: 35px;
+  } */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  @media (min-width: 768px) {
+    :root {
+      --block-size: 40px;
+    }
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  :root {
+    /* --block-size: 50px; */
+  }
+}
+
+.btn_3d {
+  display: inline-block;
+  margin: 0 auto;
+  perspective: 300px;
+  /* width: 75px; */
+  width: var(--block-size);
+}
+.btn_3d * {
+  box-sizing: border-box;
+}
+.btn_3d > span {
+  background: white;
+  border: none;
+  box-shadow: 1px 73px 41px -22px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  display: block;
+  transform-style: preserve-3d;
+  transition: all .15s ease-in;
+  transform: rotateX(40deg);
+  outline: 1px solid transparent;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.btn_3d > span:after {
+  background: #ccc;
+  content: "";
+  height: 40%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: all .15s ease-in;
+  width: 100%;
+  z-index: -1;
+}
+.btn_3d > span > span {
+  display: block;
+  height: 100%;
+  position: relative;
+  transform: scale(0.9);
+  width: 100%;
+}
+.btn_3d > span:hover, .btn_3d > span:focus {
+  background: #f6f6f6;
+  box-shadow: 1px 73px 41px -22px rgba(0, 0, 0, 1);
+  color: #ed8728;
+  transform: rotateX(30deg);
+}
+.btn_3d > span:hover:after, .btn_3d > span:focus:after {
+  background: #bebebe;
+}
+.btn_3d > span:hover > span:before, .btn_3d > span:focus > span:before, .btn_3d > span:hover > span:after, .btn_3d > span:focus > span:after {
+  width: 62%;
+}
+.btn_3d > span:hover > span:before, .btn_3d > span:focus > span:before {
+  transform: rotate(180deg) translate(0, 0);
+}
+.btn_3d > span:hover > span:after, .btn_3d > span:focus > span:after {
+  transform: rotate(-180deg) translate(-37.5%, 0);
+}
+.btn_3d > span:active {
+  transform: rotateX(20deg);
+}
+.btn_3d > span:active > span:before, .btn_3d > span:active > span:after {
+  background: skyblue;
+}
+.btn_3d.active > span > span:before, .btn_3d.active > span > span:after {
+  width: 62%;
+}
+.btn_3d.active > span > span:before {
+  transform: rotate(180deg) translate(0, 0);
+}
+.btn_3d.active > span > span:after {
+  transform: rotate(-180deg) translate(-37.5%, 0);
+}
