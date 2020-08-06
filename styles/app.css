@@ -81,14 +81,11 @@ body {
   .wrapper .numbers {
     width: 70% !important;
     top: 0 !important;
+    display: none !important;
   }
 
   .wrapper .numbers .number {
     font-size: 2rem !important;
-  }
-
-  .wrapper .numbers .number[data-abbreviation]::before {
-    display: none;
   }
 }
 
@@ -105,15 +102,13 @@ body {
   .wrapper .numbers .number {
     font-size: 4rem !important;
   }
-
-  .wrapper .numbers .number[data-abbreviation]::before {
-    display: block !important;
-  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
+  .wrapper .numbers {
+    display: flex !important;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
