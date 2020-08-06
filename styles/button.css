@@ -1,31 +1,33 @@
+:root {
+  --button-size: 25px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   :root {
-    --block-size: 30px;
+    --button-size: 30px;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /* :root {
-    --block-size: 35px;
+    --button-size: 35px;
   } */
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  @media (min-width: 768px) {
-    :root {
-      --block-size: 40px;
-    }
+  :root {
+    --button-size: 40px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  :root {
-    /* --block-size: 50px; */
-  }
+  /* :root {
+    --button-size: 50px;
+  } */
 }
 
 .btn_3d {
@@ -33,7 +35,7 @@
   margin: 0 auto;
   perspective: 300px;
   /* width: 75px; */
-  width: var(--block-size);
+  width: var(--button-size);
 }
 .btn_3d * {
   box-sizing: border-box;

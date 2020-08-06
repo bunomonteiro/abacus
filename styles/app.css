@@ -7,9 +7,13 @@
 
 html,
 body {
-  background: skyblue;
   height: 100%;
   width: 100%;
+  background: skyblue;
+}
+
+.phone-orientation {
+  display: none;
 }
 
 .wrapper {
@@ -20,6 +24,7 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding: 0 15px;
 }
 
 .wrapper .numbers {
@@ -28,6 +33,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  padding: 0 15px;
 }
 
 .wrapper .numbers .number {
@@ -48,4 +54,69 @@ body {
   text-shadow: -3px 1px 5px #1b4e63, 0 -2px 1px #fff;
   display: block;
   margin-bottom: 0;
+}
+
+/* // Small devices (up to 575px) */
+@media (max-width: 575px) {
+  html, body {
+    background: none !important;
+  }
+
+  .wrapper {
+    display: none !important;
+  }
+
+  .phone-orientation {
+    height: 300px;
+    width: 300px;
+    display: block !important;
+    position: fixed;
+    top: calc((100% - 300px) / 2);
+    left: calc((100% - 300px) / 2);
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .wrapper .numbers {
+    width: 70% !important;
+    top: 0 !important;
+  }
+
+  .wrapper .numbers .number {
+    font-size: 2rem !important;
+  }
+
+  .wrapper .numbers .number[data-abbreviation]::before {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wrapper {
+    bottom: 0 !important;
+  }
+
+  .wrapper .numbers {
+    top: 30px !important;
+  }
+
+  .wrapper .numbers .number {
+    font-size: 4rem !important;
+  }
+
+  .wrapper .numbers .number[data-abbreviation]::before {
+    display: block !important;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
 }

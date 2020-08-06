@@ -1,0 +1,41 @@
+{
+  "short_name": "Abacus",
+  "name": "Abacus",
+  "description": "Abacus",
+  "icons": [
+    {
+      "src": "/images/abacus-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/images/abacus-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/images/abacus-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/abacus-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "skyblue",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "skyblue",
+  "shortcuts": [
+    {
+      "name": "Abacus",
+      "short_name": "Abacus",
+      "description": "Abacus",
+      "url": "/",
+      "icons": [{ "src": "/images/abacus-128", "sizes": "128x28" }]
+    }
+  ]
+}

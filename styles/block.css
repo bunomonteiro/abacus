@@ -1,30 +1,32 @@
+:root {
+  --block-size: 30px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   :root {
-    --block-size: 30px;
+    --block-size: 25px;
   }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  :root {
-    /* --block-size: 35px; */
-  }
+  /* :root {
+    --block-size: 40px;
+  } */
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  @media (min-width: 768px) {
-    :root {
-      --block-size: 40px;
-    }
-  }
+  /* :root {
+    --block-size: 40px;
+  } */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   :root {
-    /* --block-size: 50px; */
+    --block-size: 50px;
   }
 }
 
@@ -48,7 +50,7 @@
 .tower .operations {
   background-color: #fff;
 
-  height: 80px;
+  height: 65px;
   width: 100%;
 
   position: absolute;
@@ -80,48 +82,48 @@
   height: calc(var(--block-size) * 1.5);
 
   position: absolute;
-  bottom: 80px;
+  bottom: 70px;
 
   z-index: 0;
 }
 
 .tower .block-wrapper[data-counter="1"] {
-  bottom: calc(80px + (var(--block-size) * 1));
+  bottom: calc(70px + (var(--block-size) * 1));
   z-index: 1;
 }
 
 .tower .block-wrapper[data-counter="2"] {
-  bottom: calc(80px + (var(--block-size) * 2));
+  bottom: calc(70px + (var(--block-size) * 2));
   z-index: 2;
 }
 
 .tower .block-wrapper[data-counter="3"] {
-  bottom: calc(80px + (var(--block-size) * 3));
+  bottom: calc(70px + (var(--block-size) * 3));
   z-index: 3;
 }
 
 .tower .block-wrapper[data-counter="4"] {
-  bottom: calc(80px + (var(--block-size) * 4));
+  bottom: calc(70px + (var(--block-size) * 4));
   z-index: 4;
 }
 
 .tower .block-wrapper[data-counter="5"] {
-  bottom: calc(80px + (var(--block-size) * 5));
+  bottom: calc(70px + (var(--block-size) * 5));
   z-index: 5;
 }
 
 .tower .block-wrapper[data-counter="6"] {
-  bottom: calc(80px + (var(--block-size) * 6));
+  bottom: calc(70px + (var(--block-size) * 6));
   z-index: 6;
 }
 
 .tower .block-wrapper[data-counter="7"] {
-  bottom: calc(80px + (var(--block-size) * 7));
+  bottom: calc(70px + (var(--block-size) * 7));
   z-index: 7;
 }
 
 .tower .block-wrapper[data-counter="8"] {
-  bottom: calc(80px + (var(--block-size) * 8));
+  bottom: calc(70px + (var(--block-size) * 8));
   z-index: 8;
 }
 
